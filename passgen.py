@@ -25,3 +25,8 @@ if char in letters:
 all_possible_chars = lower_case + upper_case + digits + symbols 
 password = ""
 
+for _ in range(password_length): 
+	# fill empty password var by using random.choice() to return a randomly selected element from the specified sequence 
+	password += random.choice(all_possible_chars)   
+
+print(f"Your random password is: {password}")
